@@ -46,7 +46,7 @@ class MainWindow(QObject):
 # INSTACE CLASS
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
-    app.setWindowIcon(QIcon("images/logo.png"))
+    app.setWindowIcon(QIcon(os.path.join(os.path.dirname(__file__),"images/logo.png")))
     engine = QQmlApplicationEngine()
 
     # Get Context
